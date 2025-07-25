@@ -60,10 +60,10 @@ const CameraScreen = () => {
                 };
 
                 await ScannedProductStorage.add(productData);
-                
+
                 setScanned(false);
                 setIsProcessing(false);
-                
+
                 Alert.alert(
                   "Produit ajouté !",
                   `${productData.label} a été ajouté à votre liste. Vous pouvez scanner un autre produit ou retourner à l'ajout de repas.`,
@@ -171,9 +171,7 @@ const CameraScreen = () => {
             style={cameraStyles.finishButton}
             onPress={() => router.replace("/(main)/add")}
           >
-            <Text style={cameraStyles.finishButtonText}>
-              Terminer le scan
-            </Text>
+            <Text style={cameraStyles.finishButtonText}>Terminer le scan</Text>
           </TouchableOpacity>
 
           {scanned && (

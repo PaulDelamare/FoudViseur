@@ -18,7 +18,7 @@ export class EdamamService {
             const data: EdamamResponse = await response.json();
             return data;
         } catch (error) {
-            console.error('Erreur lors de la recherche d\'aliments:', error);
+            // console.error('Erreur lors de la recherche d\'aliments:', error);
             throw error;
         }
     }
@@ -36,7 +36,7 @@ export class EdamamService {
             const data: EdamamResponse = await response.json();
             return data;
         } catch (error) {
-            console.error('Erreur lors de la recherche par code-barres:', error);
+            // console.error('Erreur lors de la recherche par code-barres:', error);
             throw error;
         }
     }
